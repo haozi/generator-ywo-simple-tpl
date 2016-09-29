@@ -1,6 +1,6 @@
 'use strict'
 
-const safeTrim = require('../dist/safe-trim.common.js')
+const safeTrim = require('../dist/generator-ywo-simple-tpl.common.js')
 
 describe('safeTrim', () => {
   it('trim 0', () => {

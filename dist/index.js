@@ -1,5 +1,5 @@
 /*!
- * safe-trim v1.0.7
+ * generator-ywo-simple-tpl v1.0.7
  * (c) 2016 Jerry
  * Released under the MIT License.
  */

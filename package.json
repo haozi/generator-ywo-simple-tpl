@@ -1,8 +1,8 @@
 {
-  "name": "safe-trim",
-  "version": "1.0.7",
+  "name": "generator-ywo-simple-tpl",
+  "version": "1.0.0",
   "description": "trim sting and remove zero-width-space in content",
-  "main": "dist/safe-trim.common.js",
+  "main": "dist/index.js",
   "directories": {
     "test": "test"
   },
@@ -30,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/haozime/safe-trim.git"
+    "url": "git+https://github.com/haozime/generator-ywo-simple-tpl.git"
   },
   "keywords": [
     "safeTrim",
@@ -45,7 +45,7 @@
   "author": "Jerry",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/haozime/safe-trim/issues"
+    "url": "https://github.com/haozime/generator-ywo-simple-tpl/issues"
   },
-  "homepage": "https://github.com/haozime/safe-trim#readme"
+  "homepage": "https://github.com/haozime/generator-ywo-simple-tpl#readme"
 }
