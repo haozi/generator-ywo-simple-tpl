@@ -1,43 +1,15 @@
-# safe-trim
+# generator-ywo-simple-tpl
 ---
 
-[![Build Status](https://travis-ci.org/haozime/safe-trim.svg?branch=1.0.7)](https://travis-ci.org/haozime/safe-trim/branches)
-[![codecov](https://codecov.io/gh/haozime/safe-trim/branch/master/graph/badge.svg)](https://codecov.io/gh/haozime/safe-trim)
-[![dependencies Status](https://david-dm.org/haozime/safe-trim/status.svg)](https://david-dm.org/haozime/safe-trim)
-[![devDependencies Status](https://david-dm.org/haozime/safe-trim/dev-status.svg)](https://david-dm.org/haozime/safe-trim?type=dev)
+[![Build Status](https://travis-ci.org/haozime/generator-ywo-simple-tpl.svg?branch=1.0.7)](https://travis-ci.org/haozime/generator-ywo-simple-tpl/branches)
+[![codecov](https://codecov.io/gh/haozime/generator-ywo-simple-tpl/branch/master/graph/badge.svg)](https://codecov.io/gh/haozime/generator-ywo-simple-tpl)
+[![dependencies Status](https://david-dm.org/haozime/generator-ywo-simple-tpl/status.svg)](https://david-dm.org/haozime/generator-ywo-simple-tpl)
+[![devDependencies Status](https://david-dm.org/haozime/generator-ywo-simple-tpl/dev-status.svg)](https://david-dm.org/haozime/generator-ywo-simple-tpl?type=dev)
 
 ## install
-```
-npm install safe-trim
-```
-## use
-```
-import safeTrim from 'safe-trim'
-safeTrim('    a      b  ')
-```
-
-## remove Invisible spaces
 
 ```
-let str = '  "a":1    a \r\n\r\t  ᠎             　b       '
-let ret = safeTrim(str)
-expect(ret).toEqual('"a":1    a\n\nb')
-```
+ wget -O - https://github.com/haozime/generator-ywo-simple-tpl/archive/0.0.1.tar.gz |  tar xzv -C .
 
-## convert CR CR-LR into LR
+ npm i
 ```
-a\r\n\r\nb  => 'a\n\nb'
-a\r\rb => 'a\n\nb'
-a\r\r\nb => 'a\n\nb'
-```
-
-## remove BOM
-```
-JSON.parse('﻿{"a":1}') // ❗️Error because BOM
-
-JSON.parse(safeTrim('﻿{"a":1}')) // ✅
-```
-
-
-## more feature
-[more feature](spec/test_spec.js)
